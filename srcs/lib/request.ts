@@ -5,7 +5,7 @@ dotenv.config()
 
 const request = async ({ method, type, id } : requestProps) => {
     const response = await axios({
-        url: `$https://api.notion.com/v1/${type}/${id}`,
+        url: `https://api.notion.com/v1/${type}/${id}`,
         method: method,
         headers: {
             'Authorization': `Bearer ${process.env.NOTION_TOKEN}`

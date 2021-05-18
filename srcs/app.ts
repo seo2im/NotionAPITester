@@ -7,7 +7,7 @@ const app = async (props: requestProps) => {
     const response = await request(props)
 
     const filePath = path.join(__dirname, '../response.json')
-    fs.writeFileSync(filePath, JSON.stringify(response, undefined, 4));
+    fs.writeFileSync(filePath, JSON.stringify(response.data, undefined, 4));
 }
 
 export default app

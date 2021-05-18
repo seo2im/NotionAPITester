@@ -9,6 +9,6 @@ import { request } from 'https'
 const prop: requestProps = {
     method: 'get', /* method only get/post/patch */
     type: 'pages', /* type only user/block/pages/databases */
-    id: 'id of type' /* check id from */
+    id: '917c2d83-7e0d-48d9-86d6-f12b28e4abe6' /* check id from */
 }
 app(prop)
